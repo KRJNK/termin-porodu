@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termin porodu — kalkulator ciąży</title>
+<meta name="description" content="Policz przewidywany termin porodu (reguła Naegelego) i sprawdź, który to tydzień ciąży. Szybko i lokalnie.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤰</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <!-- TODO: link do portfolio, gdy powstanie -->
+  <h1>Termin porodu</h1>
+  <p>Reguła Naegelego: pierwszy dzień ostatniej miesiączki + 280 dni.</p>
+  <section class="card">
+    <label>Pierwszy dzień ostatniej miesiączki <input id="lm" type="date"></label>
+    <label>Śr. długość cyklu (dni) <input id="cykl" type="number" min="21" max="45" value="28"></label>
+  </section>
+  <section class="card">
+    <h2>Wynik</h2>
+    <div id="out" class="big">—</div>
+    <p id="detail" class="hint"></p>
+  </section>
+  <section class="card">
+    <h2>Jak to działa</h2>
+    <p>Standardowy termin to 40 tygodni (280 dni) od pierwszego dnia ostatniej miesiączki przy 28-dniowym cyklu; przy dłuższym lub krótszym cyklu dodajemy różnicę (owulacja wypada zwykle 14 dni przed końcem cyklu). To data orientacyjna — tylko ok. 5% porodów wypada dokładnie w terminie, większość w oknie ±2 tygodni.</p>
+    <p><strong>Przykład:</strong> ostatnia miesiączka 1 stycznia przy cyklu 28 dni → termin ok. 8 października, dziś to ok. 42. tydzień? Nie — tydzień ciąży liczymy od tej samej daty: dziś minus data miesiączki, dzielone przez 7. Wiążącą datę zawsze potwierdza USG u lekarza.</p>
+  </section>
+  <div id="ads-slot" hidden></div>
+  <footer><a href="privacy.html">Prywatność</a> · <a href="kontakt.html">Kontakt</a></footer>
+</main>
+<script src="app.js"></script>
+<script src="ads.js"></script>
+</body>
+</html>
